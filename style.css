@@ -8,3 +8,168 @@ Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+*{
+  transition:all .5s
+}
+html,body{
+  width:100%;
+  height:100%;
+  font-family:"arial";
+  padding:.5em;
+  box-sizing:border-box;
+  text-transform:uppercase;
+}
+/* FLEX & RESETS */
+.flex-column{display:flex;flex-flow:column wrap};
+.flex-row   {-webkit-display:flex;-webkit-flex-flow:row wrap};
+.stretch    {justify-content:stretch;};
+.center     {justify-content:center};
+.self       {display:inline-flex;flex-flow:column wrap};
+ul li{
+  display:inline;
+}
+ul,li,a,h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+ul li a{
+ text-decoration:none;
+  color:white;
+  text-transform:uppercase;
+  cursor:pointer
+}
+ul li a:hover{
+  border-bottom:5px solid white;
+}
+/* COLOR */
+.GREY{
+  background-color:rgb(157, 141, 141)
+}
+/* NAV TOP */
+nav .top{
+  margin-bottom:1.5em;
+
+}
+#logo{
+  flex:1;
+  display:inline-flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  margin-left:120px
+}
+#logo .wrap{
+  width:164px;
+  height:136px;
+  background-color:rgb(123, 198, 229);
+  text-align:center;
+  padding:.5em;
+  box-sizing:border-box;
+  color:white;
+}
+#logo h1{
+  font-weight:bold;
+  text-transform:uppercase;
+  font-size:50px;
+  margin-top:20px;
+}
+#logo h2{
+    font-size:7.4px;
+}
+
+#social{
+   display:inline-flex;
+  flex-flow:row wrap;
+  justify-content:space-between
+  
+}
+#social .square{
+  width:50px;
+  height:50px;
+  background:rgb(90, 72, 72);
+  color:white;
+  text-align:center;
+  border-right:5px solid white;
+  cursor:pointer;
+  
+
+}
+/* ANIMATIONS CSS CLASSES */
+.makeCircle{
+  border-radius:50px;
+}
+/* NAV BOTTOM */
+nav .bottom{
+ word-spacing:2em;
+ position:relative;
+ color:white;
+ margin-bottom:2em;
+
+ 
+}
+nav .bottom:before{
+  content:" ";
+  position:absolute;
+  background:rgb(90, 72, 72);
+  top:-15px;
+  left:-50px;
+  width:120%;
+  height:45px;
+  transform:rotate(-1deg);
+  z-index:-100
+}
+
+/* slider */
+#slider{
+  margin-top:1em
+}
+#slider img{
+  width:100%;
+  height:400px;
+  max-height:100%;
+}
+
+
+/* ABOUT SECTION */
+#about i{
+  color:#6b6464
+}
+
+/* about elements */
+
+#about ul li {
+  flex:1;
+  border:6px solid black;
+  border-radius:2em;
+  margin-left:1em;
+  padding:1em;
+  box-sizing:border-box
+}
+#about ul li h1{
+  font-size:100%;
+}
+#about ul li i{
+  font-size:8em;
+  flex:1;
+
+}
+#about ul li p{
+  flex:1;
+  line-height:1.3em;
+  font-weight:bold;
+
+}
+
+@media(max-width:600px){
+  #about ul{
+    display:flex;
+    flex-flow:column wrap;
+    height:1500px;
+
+
+  }
+  #about ul li{
+    margin-bottom:1em
+  }
+
+}
+/* FOOTER */
